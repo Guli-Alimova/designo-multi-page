@@ -68,7 +68,7 @@ section1
     font-weight: 500;
     line-height: 48px;
     color:white;
-    width: 540px;
+    max-width: 540px;
     
 }
 .intro-text{
@@ -78,7 +78,7 @@ section1
     color: white;
     padding-top:40px;
     padding-bottom:40px;
-    width: 445px;
+    max-width: 445px;
 
 }
 .btn{
@@ -102,7 +102,22 @@ section1
     color: white;
 
 }
+.intro{
+    position: relative;
 
+}
+.intro-bg::after{
+    content: "";
+    background-image: url(../img/intro-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    left:55%;
+    transform: translateY(35%);
+    z-index: -3;
+}
 /* =============================
 section2
 ===============================*/
@@ -220,7 +235,7 @@ section4
     line-height: 26px;
     color: #333136;
     padding-top:32px;
-    width: 350px;
+ 
     
 }
 
@@ -267,9 +282,12 @@ section4
     letter-spacing: 1px;
     border:none;
     color: #333136;
-    margin-left:309px;
-    margin-top:39px;
+   
     
+}
+.get-btn{
+    text-align: end;
+    margin-top:40px;
 }
 .get:hover{
     background-color:  #FFAD9B;
@@ -366,13 +384,18 @@ About us
     padding-top:135px;
     padding-left:95px;
 }
-.about-img{
-    margin-right:-67px;
-}
+
 .aboutus{
     margin-bottom:160px;
     /* position: relative;  */
 }
+.about-box{
+    text-align: end;
+}
+.about-boxes{
+    text-align: start;
+}
+
 /* .aboutus-bg::before{
     content: "";
     background-image: url(../img/Rectangle.jpg);
@@ -416,10 +439,7 @@ About us
     text-align: center;
     padding-bottom:160px;
 }
-.canada{
-    margin-bottom:48px;
-   
-}
+
 .united{
     padding-bottom:32px;
     font-size: 20px;
