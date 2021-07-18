@@ -409,6 +409,7 @@ About us
 .talent-bg{
     background-image: url(../img/talant-bg.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom:160px;
 }
 .talent-title{
